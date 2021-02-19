@@ -24,6 +24,7 @@ When you clone this repository,
 `git clone https://github.com/Taeyoung96/ORB-SLAM2-with-saved-point-cloud.git`  
 
 You move to path `~ ORBSLAM2_with_save_pointcloud/Thirdparty`.  
+Build 2 subfolders.  
 
 ```
 cd g2o  
