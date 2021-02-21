@@ -4,15 +4,18 @@ This repository makes `.ply` file (Point Cloud Map) with [ORB-SLAM2](https://git
 When you execute ORB-SLAM2 with this repository, you could get point cloud map result.  
 
 ## Requirement
-The test was conducted **Ubuntu 18.04** with the specifications shown in the table below.  
+The test was conducted **Ubuntu 18.04** and **CUDA 10.2** with the specifications shown in the table below.  
 
 |Library or Pakage|Version|  
 |:----------: |:----------:|
 |OpenCV|3.4.0|
 |Eigen|3.1.1|
 |PCL||
+|CMake||
+|Boost||
 
-These reposiory needs same requirement with [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2#2-prerequisites) 
+
+These reposiory needs same requirement with [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2#2-prerequisites).  
 
 ## How to Build  
 
@@ -45,6 +48,8 @@ cmake ..
 make
 make install
 ```
+
+
 
 
 
