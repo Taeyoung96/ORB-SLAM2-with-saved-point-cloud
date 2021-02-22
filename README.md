@@ -11,8 +11,8 @@ The test was conducted **Ubuntu 18.04** and **CUDA 10.2** with the specification
 |OpenCV|3.4.0|
 |Eigen|3.1.1|
 |PCL||
-|CMake||
-|Boost||
+|CMake|3.10.2|
+|Boost|1.65|
 
 
 These reposiory needs same requirement with [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2#2-prerequisites).  
@@ -48,6 +48,42 @@ cmake ..
 make
 make install
 ```
+
+Go back to path `~ ORBSLAM2_with_save_pointcloud/`  
+
+You should build libuvc.  
+
+```
+cd libuvc
+mkdir build
+cd build
+cmake ..
+make && sudo make install
+```
+
+`cd ..` and go back to path `~ ORBSLAM2_with_save_pointcloud/`  
+Uncompress vocabulary file.  
+```
+cd Vocabulary
+tar -xf ORBvoc.txt.tar.gz
+```
+
+#### Then build whole ORB-SLAM2 system.  
+`cd ..` and go back to path `~ ORBSLAM2_with_save_pointcloud/`  
+```
+chmod +x build.sh
+sh build.sh
+```
+
+This will create **libORB_SLAM2.so**  at *lib* folder and the executables **mono_tum**, **mono_kitti**, **rgbd_tum**, **rgbd_my**, **stereo_kitti**, **mono_euroc** and **stereo_euroc** in *Examples* folder.  
+
+
+## Prepare a Dataset
+
+
+
+
+
 
 
 
